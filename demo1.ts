@@ -1,9 +1,6 @@
-import { Observable, Observer } from "rxjs";
+import { Observer } from "rxjs";
 
-let numbers = [1, 4, 9, 16];
-let source = Observable.from(numbers);
-
-class MyObserver implements Observer<number> {
+export class MyObserver1 implements Observer<number> {
 
     next(value) {
         console.log(`value: ${value}`);
@@ -18,5 +15,3 @@ class MyObserver implements Observer<number> {
     }
 
 }
-
-source.subscribe(new MyObserver());

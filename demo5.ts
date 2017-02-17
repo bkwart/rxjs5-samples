@@ -1,12 +1,4 @@
-import { Observable, Observer } from "rxjs";
-
-/*
-import { Observable } from "rxjs/Observable";
-import { Observer } from "rxjs/Observer";
-import "rxjs/add/observable/from";
-import "rxjs/add/operator/map";
-import "rxjs/add/operator/filter";
-*/
+import { Observable } from "rxjs";
 
 let source5 = Observable.fromEvent(document, "mousemove")
                         .map((e: MouseEvent) => {

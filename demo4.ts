@@ -1,15 +1,7 @@
 import { Observable, Observer } from "rxjs";
 
-/*
-import { Observable } from "rxjs/Observable";
-import { Observer } from "rxjs/Observer";
-import "rxjs/add/observable/from";
-import "rxjs/add/operator/map";
-import "rxjs/add/operator/filter";
-*/
-
 let numbers4 = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40];
-let source4 = Observable.create(observer => {
+let source4 = Observable.create((observer: Observer<number>) => {
     let index = 0;
 
     let produceValue = () => {
